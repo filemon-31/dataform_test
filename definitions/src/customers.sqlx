@@ -1,12 +1,10 @@
 config {
-  type: operations
-  schema: dl_nothwind
-  hasOutput: true
+    type: operations
+    schema: dl_nothwind
+    hasOutput: true
 }
 
-create or replace table ${self()}
-  with connection `${dataform.projectConfig.vars.bigLakeConnection}
-  options (
-    format = "CSV",
-    uris = ['gs://dl_northwind_dataset/customer.csv']
-  );
+CREATE OR REPLACE TABLE
+  ${self()}
+WITH CONNECTION `${dataform.projectConfig.vars.bigLakeConnection} OPTIONS ( format = "CSV",
+    uris = ['gs://dl_northwind_dataset/customer.csv'] );
