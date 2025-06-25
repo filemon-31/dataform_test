@@ -4,7 +4,3 @@ dataformCoreVersion: "3.0.0"                    # Required
 
 defaultLocation: europe-west4              # Optional (for GCP region)
 defaultAssertionDataset: assertions_table   # Optional (for test tables)
-
-vars:                                      # Optional (for reusable project variables)
-  env: dev
-  country: nl
