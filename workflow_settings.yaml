@@ -1,6 +1,6 @@
-defaultProject: studious-saga-367509.dl_nothwind       # Required
-defaultDataset: dl_nothwind                            # Required
-dataformCoreVersion: "3.0.0"                           # Required
+defaultProject: studious-saga-367509            # Required
+defaultDataset: raw_dl_nothwind                     # Required
+dataformCoreVersion: "3.0.0"                    # Required
 
 defaultLocation: europe-west4              # Optional (for GCP region)
 defaultAssertionDataset: assertions_table   # Optional (for test tables)
