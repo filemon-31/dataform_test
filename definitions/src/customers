@@ -8,5 +8,5 @@ create or replace table ${self()}
   with connection `${dataform.projectConfig.vars.bigLakeConnection}
   options (
     format = "CSV",
-    uris = ['gs://your-bucket-path/products.csv']
+    uris = ['gs://dl_northwind_dataset/customer.csv']
   );
